@@ -12,7 +12,7 @@ const ProductItem = (props) => (
     {props.products ? (
       <div className="ProductItem">
         {props.products.map((d, i) => (
-          <Col xs={6} md={4} lg={3}>
+          <Col xs={6} md={4} lg={3} key={i}>
           <div key={i} className="item small-6 medium-4 large-3">
             <div key={d.activated_at}>
               {

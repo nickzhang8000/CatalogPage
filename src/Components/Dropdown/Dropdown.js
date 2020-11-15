@@ -20,7 +20,7 @@ const DropdownList = (props) => (
   <div>
     <DropdownButton
       id="dropdown-item-button"
-      title={allSortTypes[props.sortType]}
+      title={allSortTypes[props.sortType] || "Popularity"}
       key={"Info"}
       id={`dropdown-variants-Info`}
       variant={"info"}

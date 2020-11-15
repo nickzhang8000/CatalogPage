@@ -11,7 +11,8 @@ const PaginationElement = (props) => {
   let items = [];
   items.push(
     <Pagination.Prev
-      onClick={() => props.fetchProducts(props.sortType, props.page - 1)}
+      key="prev"
+      onClick={() => props.fetchProducts(props.sortType, props.page - 1) }
     />
   );
   let startNum = props.page < 5 ? 1 : props.page - 2;
@@ -28,6 +29,7 @@ const PaginationElement = (props) => {
   }
   items.push(
     <Pagination.Next
+      key="next"
       onClick={() => props.fetchProducts(props.sortType, props.page + 1)}
     />
   );
@@ -40,7 +42,7 @@ const PaginationElement = (props) => {
 PaginationElement.propTypes = {
   sortType: PropTypes.string,
   fetchProducts: PropTypes.func,
-  page: PropTypes.int,
+  page: PropTypes.number,
 };
 
 export default PaginationElement;
