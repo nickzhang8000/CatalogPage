@@ -1,0 +1,12 @@
+.Pagination{
+    justify-content: flex-end;
+    padding-right: 40px;
+    .page-item.active .page-link{
+        background-color: $surfaceDark;
+        color: $surfaceLight;
+        border-color: $surfaceDark;
+    }
+    .page-link{
+        color: $surfaceDark;
+    }
+}

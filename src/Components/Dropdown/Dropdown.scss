@@ -1,0 +1,10 @@
+.dropdown{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  padding-right: 40px;
+  
+  .dropdown-item.active, .dropdown-item:active{
+    background-color: $buttonActive;
+  }
+}
